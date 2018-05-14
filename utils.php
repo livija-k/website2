@@ -1,23 +1,23 @@
 <?php
-function echoRowValue($row, $column) 
+function getRowValue($row, $column) 
 {
-  echo strip_tags($row[$column]);
+  return strip_tags($row[$column]);
 }
 
-function echoRowValueOr($row, $column, $or = "") 
+function getRowValueOr($row, $column, $or = "") 
 {
   if (isset($row[$column])) 
-    echo strip_tags($row[$column]);
-  else if (isset($or))
-    echo $or;
+    return strip_tags($row[$column]);
+  else 
+    return $or;
 }
 
-function echoValue($value) 
+function getValue($value) 
 {
-  echo strip_tags($value);
+  return strip_tags($value);
 }
 
-function echoValueOr($value, $or = "") 
+function getValueOr($value, $or = "") 
 {
   if (isset($value)) 
     return strip_tags($value);

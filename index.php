@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Livia&Seva">
 
     <title>Jumbotron Template for Bootstrap</title>
 
@@ -13,7 +13,7 @@
   <body>
 
 <?php
-  include_once 'navbar.php';  
+  include_once 'navbar.php';
 ?>
 
     <main role="main">

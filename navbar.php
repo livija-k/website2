@@ -16,7 +16,7 @@
             {
               while ($row = $result->fetch_assoc())
               {
-                echo '<li class="nav-item"><a class="nav-link" href="'.echoValueOr($row["link"]).'" title="'.echoValueOr($row["hint"]).'">'.echoValueOr($row["title"]).'</a></li>';
+                echo '<li class="nav-item"><a class="nav-link" href="'.getValueOr($row["link"]).'" title="'.getValueOr($row["hint"]).'">'.getValueOr($row["title"]).'</a></li>';
               }
             }
             /* free result set */
@@ -41,9 +41,7 @@
             </div>
           </li> -->
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+           <a href="login.php" class="btn btn-outline-success my-2 my-sm-0">Login</a>
+
       </div>
     </nav>
