@@ -18,4 +18,6 @@ $conn->set_charset("utf-8");
 $conn->query("SET CHARACTER SET utf8");
 $conn->query("SET CHARSET utf8");
 $conn->query("SET COLLATION_CONNECTION = 'utf8_unicode_ci'");
+
+session_start();
 ?>

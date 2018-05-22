@@ -41,7 +41,15 @@
             </div>
           </li> -->
         </ul>
-           <a href="login.php" class="btn btn-outline-success my-2 my-sm-0">Login</a>
+        <?php
+          $username = getCurrentUsername($conn);
+        
+          if (!is_null($username))
+            echo $username;
+          else
+            echo '<a href="login.php" class="btn btn-outline-success my-2 my-sm-0">Login</a>';
+        ?>
+           
 
       </div>
     </nav>
